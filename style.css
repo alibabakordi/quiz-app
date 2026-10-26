@@ -1,0 +1,186 @@
+/*
+  .finish_btn_container_js{
+    opacity: 0;
+  }
+  .visible{
+    opacity: 1;
+  }
+  .correct{
+    background-color: green;
+  }
+  .wrong{
+    background-color: red;
+  }
+  .null{
+    background-color: orange;
+  }
+*/
+/* ===== base / reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #f0f2f5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 60px;
+}
+
+/* ===== main card ===== */
+.container {
+  background: #ffffff;
+  width: 520px;
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== title screen ===== */
+.quiz_title_js {
+  text-align: center;
+  font-size: 20px;
+}
+
+.start_btn_js {
+  padding: 10px 40px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #2f6fed;
+  color: white;
+  cursor: pointer;
+  margin-top: 14px;
+}
+
+.start_btn_js:hover {
+  background: #1f56c4;
+}
+
+/* ===== question ===== */
+.question_text_js {
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+/* ===== option buttons (during quiz) ===== */
+.option_js {
+  display: block;       /* makes each button take its own line */
+  width: 100%;
+  padding: 11px;
+  margin: 8px 0;
+  font-size: 15px;
+  text-align: left;
+  border: 1px solid #d9dce1;
+  border-radius: 8px;
+  background: #fafbfc;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.option_js:hover {
+  background: #e8f0fe;
+}
+
+/* ===== next / previous / finish ===== */
+.next_btn_js,
+.previous_btn_js,
+.finish_btn_js {
+  padding: 9px 22px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #2f6fed;
+  color: white;
+  cursor: pointer;
+  margin-right: 8px;
+  margin-top: 14px;
+}
+
+.previous_btn_js {
+  background: #6b7280;   /* gray so it's less prominent than next */
+}
+
+.next_btn_js:hover,
+.finish_btn_js:hover {
+  background: #1f56c4;
+}
+
+.previous_btn_js:hover {
+  background: #4b5563;
+}
+
+.finish_btn_container_js {
+  opacity: 0;
+  transition: opacity 0.4s;   /* smooth fade when it appears */
+  margin-top: 10px;
+}
+
+.finish_btn_container_js.visible {
+  opacity: 1;
+}
+
+.finish_btn_container_js p {
+  font-size: 12px;
+  color: #8a8f98;
+  margin-top: 6px;
+}
+
+.finish_btn_js {
+  background: #16a34a;   /* green = "final action" */
+}
+
+.finish_btn_js:hover {
+  background: #12813c;
+}
+
+/* ===== timer (fixed, always visible) ===== */
+.time-track-js {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  background: #ffffff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== result screen ===== */
+.option_js_check {
+  padding: 9px 12px;
+  margin: 6px 0;
+  border-radius: 6px;
+  color: black;
+  font-size: 14px;
+}
+
+.correct {
+  background: #16a34a;
+}
+
+.wrong {
+  background: #dc2626;
+  text-decoration: line-through;   /* crossed out = clearly the mistake */
+}
+
+.null {
+  background: #d97706;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.selected{
+  background-color:rgba(234, 255, 0, 0.599);
+}
