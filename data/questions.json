@@ -1,0 +1,27 @@
+[
+  {
+    "question": "What does HTML stand for?",
+    "options": ["Hyper Text Markup Language", "Home Tool Markup Language", "Hyperlinks Text Machine Language", "High Tech Modern Language"],
+    "correct": 0
+  },
+  {
+    "question": "Which tag creates a link?",
+    "options": ["div", "a", "p", "img"],
+    "correct": 1
+  },
+  {
+    "question": "What's the color of the banana?",
+    "options": ["red", "blue", "gray", "yellow"],
+    "correct": 3
+  },
+  {
+    "question": "Which planet is known as the Red Planet?",
+    "options": ["Venus", "Mars", "Jupiter", "Mercury"],
+    "correct": 1
+  },
+  {
+    "question": "What does CSS control?",
+    "options": ["Logic", "Server", "Styling", "Database"],
+    "correct": 2
+  }
+]
