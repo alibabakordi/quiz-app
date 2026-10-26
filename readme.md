@@ -21,7 +21,7 @@ A web-based quiz application with a live countdown timer, answer tracking, and a
 ## Changing the quiz duration
 The deadline is set as a constant in the code:
 
-1. Open `quiz.js`
+1. Open `script.js`
 2. Find this line near the top:
 
 ```js
