@@ -3,7 +3,7 @@
 A web-based quiz application with a live countdown timer, answer tracking, and a final score review.
 
 ## Live demo
-👉 https://YOUR-USERNAME.github.io/quiz-app/
+👉 https://alibabakordi.github.io/quiz-app/
 
 ## Features
 - Multiple-choice questions loaded from an external JSON file (`data/questions.json`)
